@@ -1,0 +1,22 @@
+<form action="/login" method="POST">
+    <div class="form-group">
+        <label for="role">الصفة / نوع المستخدم:</label>
+        <select id="role" name="role" required>
+            <option value="student">طالب</option>
+            <option value="dept_head">رئيس قسم</option>
+            <option value="finance">الشؤون المالية</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="identity">رقم الهوية / الرقم الجامعي:</label>
+        <input type="text" id="identity" name="identity" placeholder="أدخل رقم الهوية أو الرقم الجامعي" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">كلمة المرور:</label>
+        <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+    </div>
+
+    <button type="submit">دخول إلى النظام</button>
+</form>
